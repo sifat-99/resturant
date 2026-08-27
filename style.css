@@ -430,6 +430,7 @@ img {
 
 .about-content {
     flex: 1;
+
 }
 
 .tabs {
@@ -1074,6 +1075,14 @@ img {
         margin-bottom: 50px;
     }
 
+    .about-content {
+        align-items: start;
+    }
+
+    .about-actions {
+        align-items: center;
+    }
+
     .feature-text h4 {
         font-size: 24px;
         font-style: normal;
@@ -1184,6 +1193,10 @@ img {
         display: none;
     }
 
+    .hero-content {
+        align-items: start;
+    }
+
     .hero-title {
         font-size: 72px;
         text-align: center !important;
@@ -1198,11 +1211,11 @@ img {
     }
 
     .about-container {
-        align-items: center;
+        align-items: start;
     }
 
     .about-actions {
-        justify-content: center;
+        justify-content: start;
         gap: 16px;
     }
 
