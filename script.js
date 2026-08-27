@@ -126,9 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 100);
 
-    /* ==========================================================================
-       Functional Form Handling
-       ========================================================================== */
+
     const bookingForm = document.getElementById('booking-form');
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
