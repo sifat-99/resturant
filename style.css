@@ -1025,6 +1025,13 @@ img {
         line-height: 28px;
     }
 
+    .badge-text {
+        font-size: 21.6px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+
     .about-container {
         margin-bottom: 50px;
     }
