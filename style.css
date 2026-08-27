@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary-red: #B52B1D;
@@ -16,6 +16,7 @@
     --font-secondary: 'Bebas Neue', cursive;
     --font-raleway: 'Raleway', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
+    --font-inter: 'Inter', sans-serif;
     --font-opensans: 'Open Sans', sans-serif;
     --transition: all 0.3s ease;
 }
@@ -74,7 +75,8 @@ img {
     padding: 12px 28px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: var(--font-roboto);
     border: none;
     cursor: pointer;
     transition: var(--transition);
@@ -424,7 +426,7 @@ img {
     color: var(--text-gray);
     cursor: pointer;
     position: relative;
-    font-family: var(--font-main);
+    font-family: var(--font-inter);
 }
 
 .tab-btn.active {
@@ -460,6 +462,7 @@ img {
     font-weight: 700;
     line-height: 62px;
     margin-bottom: 18px;
+    text-align: left;
 }
 
 .tab-content p {
@@ -470,6 +473,7 @@ img {
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 32px;
+    text-align: left;
 
 }
 
@@ -899,45 +903,58 @@ img {
 }
 
 .footer-title {
-    font-size: 32px;
-    margin-bottom: 60px;
-    color: #fff;
+    color: var(--text-light);
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-bottom: 60px;
+    margin-top: 48px;
+    margin-bottom: 120px;
 }
 
-.footer-col i {
-    font-size: 24px;
-    color: var(--accent-yellow);
-    margin-bottom: 20px;
+.footer-col svg {
+    margin-bottom: 24px;
 }
 
 .footer-col h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #fff;
+    color: var(--text-light);
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: 1.44px;
+    margin-bottom: 12px;
 }
 
 .footer-col p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
@@ -953,10 +970,14 @@ img {
 }
 
 .copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 30px;
-    font-size: 14px;
+    font-family: var(--font-roboto);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.63px;
     color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 120px;
 }
 
 /* ==========================================================================
@@ -993,10 +1014,51 @@ img {
         display: flex;
     }
 
+    .hero {
+        padding-top: 120px;
+    }
+
     .hero-container,
     .about-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .about-container {
+        margin-bottom: 50px;
+    }
+
+    .feature-text h4 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .feature-text p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .section-header {
+        margin-bottom: 0px;
+    }
+
+    .book-table {
+        padding: 30px 0px;
     }
 
     .hero-content {
@@ -1017,6 +1079,31 @@ img {
 
     .about {
         padding-bottom: 30px;
+        padding-top: 32px;
+    }
+
+    .tab-btn {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+
+    .tab-content h2 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+    }
+
+    .tab-content p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
     }
 
     .popular-foods {
@@ -1031,6 +1118,7 @@ img {
     .hero-title {
         font-size: 72px;
         text-align: center !important;
+        line-height: 60px;
     }
 
     .hero-subtitle {
@@ -1049,6 +1137,31 @@ img {
     .features-container {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .testimonials {
+        padding: 30px 0px;
+    }
+
+    .section-title.text-white {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    .book-desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .section-title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
     }
 
     .testimonial-card {
@@ -1071,6 +1184,10 @@ img {
 
     .quote-text {
         margin-bottom: 40px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
     }
 
     .slider-nav {
@@ -1083,6 +1200,47 @@ img {
         justify-content: center;
         margin-top: 32px;
     }
+
+    .footer {
+        padding: 30px 0px;
+    }
+
+    .footer-title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    .footer-col h4 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        /* 116.667% */
+        letter-spacing: 1.44px;
+    }
+
+    .footer-col p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .footer-grid {
+        margin-bottom: 60px;
+    }
+
+    .footer-col svg {
+        margin-bottom: 16px !important;
+    }
+
+    .copyright {
+        padding-bottom: 30px;
+    }
+
+
 
     .bg-food {
         display: none;
@@ -1128,6 +1286,7 @@ img {
         opacity: 1;
         visibility: visible;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding-bottom: 16px;
     }
 
     .features-container {
@@ -1147,12 +1306,9 @@ img {
 
     .hero-title {
         font-size: 48px;
+        line-height: 56px;
     }
 
-
-    .section-title {
-        font-size: 28px;
-    }
 
     .form-row {
         flex-direction: column;
