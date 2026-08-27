@@ -1034,6 +1034,10 @@ img {
         display: flex;
     }
 
+    .header-right {
+        padding: 0px;
+    }
+
     .hero {
         padding-top: 120px;
     }
