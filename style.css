@@ -792,6 +792,14 @@ img {
     display: grid;
     grid-template-columns: 40% 60%;
     max-height: 557px;
+    position: relative;
+}
+
+.testimonial-left-img {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    object-fit: cover;
 }
 
 .testimonial-content {
