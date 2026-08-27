@@ -358,7 +358,7 @@ img {
 }
 
 .about-image img {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     min-height: 460px;
     object-fit: cover;
 }
@@ -1188,10 +1188,13 @@ img {
         font-size: 72px;
         text-align: center !important;
         line-height: 60px;
+        background: none !important;
+        text-align: left !important;
     }
 
     .hero-subtitle {
         margin: 0 auto 30px;
+        text-align: left !important;
     }
 
     .about-container {
