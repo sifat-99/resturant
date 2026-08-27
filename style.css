@@ -388,10 +388,34 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 116%;
-    background-image: url('./images/badge.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    background: conic-gradient(var(--accent-yellow) 0deg 280deg, #E5E7EB 280deg 360deg);
+}
+
+.progress-ring::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: var(--text-light);
+    border-radius: 50%;
+}
+
+.progress-ring span {
+    position: relative;
+    z-index: 1;
+}
+
+.progress-ring::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-light);
+    border: 3px solid var(--accent-yellow);
+    border-radius: 50%;
+    top: 22px;
+    left: -4px;
+    z-index: 2;
 }
 
 .market-badge span {
@@ -1163,6 +1187,14 @@ img {
         font-style: normal;
         font-weight: 700;
         line-height: 48px;
+    }
+
+    .tomato-left {
+        display: none;
+    }
+
+    .leaf-right {
+        display: none;
     }
 
     .testimonial-card {
