@@ -81,6 +81,7 @@ img {
     cursor: pointer;
     transition: var(--transition);
     text-align: center;
+    text-wrap: nowrap;
 }
 
 .btn-primary {
@@ -516,6 +517,7 @@ img {
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .features-container {
@@ -1100,6 +1102,36 @@ img {
     .outer-shell {
         right: 15px;
         bottom: 15px;
+        width: 72px;
+        height: 72px;
+        padding: 4.076px 4.076px 4.528px 4.528px;
+    }
+
+    .today-offer {
+        width: 63.396px;
+        height: 63.396px;
+        padding: 11.825px 10.624px 7.572px 10.772px;
+        flex-shrink: 0;
+    }
+
+    .about-image img {
+        min-height: 0;
+    }
+
+    .market-badge {
+        padding: 11px 12px;
+    }
+
+    .market-badge span {
+        font-size: 8.558px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 147.5%;
+    }
+
+    .progress-ring {
+        width: 50px;
+        height: 50px;
     }
 
     .about {
@@ -1156,7 +1188,7 @@ img {
 
     .about-actions {
         justify-content: center;
-
+        gap: 16px;
     }
 
     .features-container {
@@ -1204,11 +1236,14 @@ img {
         max-height: none;
     }
 
-    .testimonial-content,
-    .testimonial-video {
+    .testimonial-content {
         height: auto;
         max-height: none;
+    }
 
+    .testimonial-video {
+        height: 400px;
+        max-height: none;
     }
 
     .testimonial-content {
